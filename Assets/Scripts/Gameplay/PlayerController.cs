@@ -57,10 +57,14 @@ public class PlayerController : MonoBehaviour
     
     void client_MqttMsgReceived(object sender, MqttMsgPublishEventArgs e)
     {
-        if(e.Topic == "Turn/Right"){R_Turn = System.Text.Encoding.UTF8.GetString(e.Message);}
-        else{L_Turn = System.Text.Encoding.UTF8.GetString(e.Message);}
-        
-        
+        if (e.Topic == "Turn/Right")
+        {
+            R_Turn = System.Text.Encoding.UTF8.GetString(e.Message);
+        }
+        else
+        {
+            L_Turn = System.Text.Encoding.UTF8.GetString(e.Message);
+        }
     }
 
     void Update()

@@ -16,6 +16,7 @@ TagManager:
   - Compass
   - UINameHolder
   - Play
+  - Garage-Menu
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Teleport
   - 
   - 
   - 

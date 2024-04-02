@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -229,11 +229,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb68eb84b74520429b3331a59cdb949, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeliverObjActive: 0
-  Trigger: {fileID: 0}
-  ObjectiveLocationUI: {fileID: 0}
-  ObjText: {fileID: 0}
-  EndTrigger: {fileID: 0}
+  DeliverObjActive: 1
+  Trigger: {fileID: 47071968}
+  ObjectiveLocationUI: {fileID: 61739994}
+  ObjText: {fileID: 676129050}
+  EndTrigger: {fileID: 87863577}
 --- !u!136 &47071971
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -507,10 +507,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3bef9fbcfcb294eb8d4bebea0e4511, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartTrigger: {fileID: 0}
-  EndTrigger: {fileID: 0}
-  ObjectiveLocationUI: {fileID: 0}
-  ObjText: {fileID: 0}
+  StartTrigger: {fileID: 47071968}
+  EndTrigger: {fileID: 87863577}
+  ObjectiveLocationUI: {fileID: 61739994}
+  ObjText: {fileID: 676129050}
 --- !u!136 &87863580
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -696,8 +696,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be628ffabb2d9f842951eb715d171654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CompleteLevelUI: {fileID: 0}
-  MissionFailUI: {fileID: 0}
+  CompleteLevelUI: {fileID: 1730800681}
+  MissionFailUI: {fileID: 1062666564}
 --- !u!1 &149034089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,7 +3267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5702383da987dcc44901c55e66dea313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 126096670}
 --- !u!1 &948308727
 GameObject:
   m_ObjectHideFlags: 0

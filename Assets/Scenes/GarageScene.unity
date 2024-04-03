@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -302,8 +302,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4767356ded508747ac666be3ebf272a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Action: 0
+  ToggleTargets: []
   SceneTarget: 
-  Material: {fileID: 2100000, guid: 49d29f604337b9449b48b10844143434, type: 2}
+  Renderer: {fileID: 165800286}
+  Selected: {r: 1, g: 1, b: 1, a: 1}
+  Unselected: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+--- !u!23 &165800286 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7333160949982309426, guid: 3265678c6a9bb6642aa0ac4087b69620,
+    type: 3}
+  m_PrefabInstance: {fileID: 743075657}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &743075657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -312,21 +322,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6331490198421251781, guid: 3265678c6a9bb6642aa0ac4087b69620,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 664788e5fdcf5f74faa207c0b8833a37, type: 2}
-    - target: {fileID: 7333160949982309426, guid: 3265678c6a9bb6642aa0ac4087b69620,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 49d29f604337b9449b48b10844143434, type: 2}
-    - target: {fileID: 7502183763565121575, guid: 3265678c6a9bb6642aa0ac4087b69620,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 47f640b2016837646953f8277728277e, type: 2}
     - target: {fileID: 8187953420388199482, guid: 3265678c6a9bb6642aa0ac4087b69620,
         type: 3}
       propertyPath: m_Name
@@ -662,8 +657,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4767356ded508747ac666be3ebf272a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Action: 1
+  ToggleTargets: []
   SceneTarget: CityScene
-  Material: {fileID: 2100000, guid: 07a2ed207dcfb7749882970595598df9, type: 2}
+  Renderer: {fileID: 969448802}
+  Selected: {r: 1, g: 1, b: 1, a: 1}
+  Unselected: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+--- !u!23 &969448802 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2378812104571972965, guid: 3265678c6a9bb6642aa0ac4087b69620,
+    type: 3}
+  m_PrefabInstance: {fileID: 743075657}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1049825630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1240,8 +1245,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4767356ded508747ac666be3ebf272a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Action: 0
+  ToggleTargets: []
   SceneTarget: 
-  Material: {fileID: 2100000, guid: 47f640b2016837646953f8277728277e, type: 2}
+  Renderer: {fileID: 1745123239}
+  Selected: {r: 1, g: 1, b: 1, a: 1}
+  Unselected: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+--- !u!23 &1745123239 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7502183763565121575, guid: 3265678c6a9bb6642aa0ac4087b69620,
+    type: 3}
+  m_PrefabInstance: {fileID: 743075657}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1746460186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1783,7 +1798,7 @@ MonoBehaviour:
   m_Camera: {fileID: 1193635248}
   m_OriginBaseGameObject: {fileID: 1792777825}
   m_CameraFloorOffsetObject: {fileID: 1826232067}
-  m_RequestedTrackingOriginMode: 1
+  m_RequestedTrackingOriginMode: 2
   m_CameraYOffset: 1.1176
 --- !u!4 &1792777827
 Transform:
@@ -1996,8 +2011,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4767356ded508747ac666be3ebf272a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Action: 0
+  ToggleTargets: []
   SceneTarget: 
-  Material: {fileID: 2100000, guid: 664788e5fdcf5f74faa207c0b8833a37, type: 2}
+  Renderer: {fileID: 1807904914}
+  Selected: {r: 1, g: 1, b: 1, a: 1}
+  Unselected: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
+--- !u!23 &1807904914 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6331490198421251781, guid: 3265678c6a9bb6642aa0ac4087b69620,
+    type: 3}
+  m_PrefabInstance: {fileID: 743075657}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1826232067
 GameObject:
   m_ObjectHideFlags: 0
